@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Wordpress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="trasave-container">
+        <div class="trasave-trasave">
+          <img
+            alt="Ellipse6213"
+            src="public/external/ellipse6213-qh1l.svg"
+            class="trasave-ellipse62"
+          />
+          <div class="trasave-group10">
+            <img
+              alt="Ellipse115"
+              src="public/external/ellipse115-7apl.svg"
+              class="trasave-ellipse1"
+            />
+            <img
+              alt="pngegg78116"
+              src="public/external/pngegg78116-9qd-700w.png"
+              class="trasave-pngegg781"
+            />
+          </div>
+          <span class="trasave-text">
+            <span>
+              Save your money for travel securely and explore the whole world
+              with trasave, we provide you the best travel services.
+            </span>
+          </span>
+          <span class="trasave-text02">
+            <span class="trasave-text03">SAVING</span>
+            <span class="trasave-text04">
+              YOUR MONEY FOR TRAVEL THROUGH TRAVEL FUND
+            </span>
+          </span>
+          <div class="trasave-frame1 Content button">
+            <span class="trasave-text05"><span>Save now</span></span>
+          </div>
+          <div class="trasave-frame40 Content button">
+            <span class="trasave-text07"><span>UI/UX Case Study</span></span>
+          </div>
+          <div class="trasave-frame23">
+            <div class="trasave-frame10">
+              <img
+                alt="ServiceTips113"
+                src="public/external/servicetips113-yiud-200h.png"
+                class="trasave-service-tips"
+              />
+              <span class="trasave-text09">
+                <span class="trasave-text10">Save</span>
+                <span>money</span>
+              </span>
+              <span class="trasave-text12">
+                <span>Invest in trasave securily for future</span>
+              </span>
+            </div>
+            <div class="trasave-frame6">
+              <img
+                alt="WeddingGift117"
+                src="public/external/weddinggift117-tch-200h.png"
+                class="trasave-wedding-gift"
+              />
+              <span class="trasave-text14">
+                <span class="trasave-text15">Earn</span>
+                <span>rewards</span>
+              </span>
+              <span class="trasave-text17">
+                <span>Earn rewards and track your money</span>
+              </span>
+            </div>
+            <div class="trasave-frame8">
+              <img
+                alt="TravelAgency121"
+                src="public/external/travelagency121-kt05-200h.png"
+                class="trasave-travel-agency"
+              />
+              <span class="trasave-text19">
+                <span class="trasave-text20">Travel</span>
+                <span>Global</span>
+              </span>
+              <span class="trasave-text22">
+                <span>Use this money for your travelling</span>
+              </span>
+            </div>
+          </div>
+          <div class="trasave-frame13">
+            <span class="trasave-text24">
+              <span class="trasave-text25">Why to</span>
+              <span class="trasave-text26">travel</span>
+              <span>with us?</span>
+            </span>
+            <span class="trasave-text28">
+              <span>
+                Ambitious about your next adventure but sick of saving money?
+                End up sneaking into those savings because well. You’re bored?
+                Lost motivation? You don’t feel the funds are growing fast
+                enough? Saving just sucks? Trasave has introduced an epic new
+                way to reward you for your savings for travel
+              </span>
+            </span>
+          </div>
+          <div class="trasave-group11">
+            <img
+              alt="unsplashOCrPJce6GPk157"
+              src="public/external/unsplashocrpjce6gpk157-r7k-1600w.png"
+              class="trasave-unsplash-o-cr-p-jce6g-pk"
+            />
+            <div class="trasave-frame32">
+              <div class="trasave-frame31">
+                <img
+                  alt="Rectangle31160"
+                  src="public/external/rectangle31160-p4hk-200h.png"
+                  class="trasave-rectangle31"
+                />
+                <span class="trasave-text30">
+                  <span>
+                    Save your travel money in Trasave and get top grade security
+                    with us
+                  </span>
+                </span>
+              </div>
+              <span class="trasave-text32">
+                <span>
+                  There are so many benefits of travelling with Trasave. Not
+                  only do we provide you with an awesome digital travel solution
+                  , an awesome travel app, but we also make it super easy and
+                  fun for you to store, save and move your travel money.
+                </span>
+                <br />
+                <span></span>
+                <br />
+                <span>
+                  As well as saving money, the TRASAVE travel fund is a good way
+                  to track your travel money. Tracking Expenses is important
+                  when travelling as you don’t want to be stuck in the middle of
+                  your journey budgeting your travel. We created the travel fund
+                  so you can store all your travel money and then track your
+                  money from your travel fund expense tracker.
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="trasave-frame131">
+            <img
+              alt="unsplash1FxMET2U5dU164"
+              src="public/external/unsplash1fxmet2u5du164-xcna-500h.png"
+              class="trasave-unsplash1-fx-met2u5d-u"
+            />
+            <div class="trasave-frame16">
+              <span class="trasave-text38"><span>About</span></span>
+              <span class="trasave-text40"><span>• Technical Info</span></span>
+              <span class="trasave-text42"><span>• Other Products</span></span>
+            </div>
+            <div class="trasave-frame15">
+              <span class="trasave-text44">Contact Us</span>
+              <span class="trasave-text45"><span>Bengaluru, India</span></span>
+              <span class="trasave-text47"><span>80030 10108</span></span>
+              <span class="trasave-text49"><span>hr@curlistic.com</span></span>
+            </div>
+            <span class="trasave-text51">
+              <span>Copright 2022 Curlistic. All right reserved.</span>
+            </span>
+            <div class="trasave-frame34">
+              <span class="trasave-text53">
+                <span class="trasave-text54">Subscribe</span>
+                <span class="trasave-text55">Newsletter</span>
+              </span>
+              <div class="trasave-group12">
+                <img
+                  alt="Rectangle34179"
+                  src="public/external/rectangle34179-7l4d-200h.png"
+                  class="trasave-rectangle34"
+                />
+                <span class="trasave-text56 Content button">
+                  <span>Subscribe</span>
+                </span>
+                <span class="trasave-text58">
+                  <span>Enter your email</span>
+                </span>
+              </div>
+            </div>
+            <div class="trasave-frame401">
+              <div class="trasave-mask-group">
+                <img
+                  alt="image4184"
+                  src="public/external/image4184-dbp-200h.png"
+                  class="trasave-image4"
+                />
+                <img
+                  src="public/external/image31105-pyb-200h-200w.png"
+                  alt="image"
+                  class="trasave-image"
+                />
+              </div>
+              <span class="trasave-text60">
+                <span>
+                  TRASAVE travel fund is a good way to track your travel money.
+                </span>
+              </span>
+              <div class="trasave-mask-group1">
+                <div class="trasave-group3">
+                  <img
+                    alt="Facebook189"
+                    src="public/external/facebook189-yane-200h.png"
+                    class="trasave-facebook"
+                  />
+                  <img
+                    alt="LinkedIn190"
+                    src="public/external/linkedin190-bycq-200h.png"
+                    class="trasave-linked-in"
+                  />
+                  <img
+                    alt="Instagram191"
+                    src="public/external/instagram191-vevq-200h.png"
+                    class="trasave-instagram"
+                  />
+                  <img
+                    alt="Twitter192"
+                    src="public/external/twitter192-8hv-200h.png"
+                    class="trasave-twitter"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trasave-container1">
+            <div class="trasave-container2">
+              <img
+                src="public/external/image31105-pyb-200h-200w.png"
+                alt="image"
+                class="trasave-image1"
+              />
+            </div>
+          </div>
+          <div class="trasave-frame39">
+            <div class="trasave-mask-group2">
+              <img
+                alt="image31105"
+                src="public/external/image31105-pyb-200h.png"
+                class="trasave-image3"
+              />
+            </div>
+            <div class="trasave-frame3">
+              <span class="trasave-text62 Content button">Home</span>
+              <span class="trasave-text63 Content button">Save</span>
+              <span class="trasave-text64 Content button">
+                <span>Travel</span>
+              </span>
+              <span class="trasave-text66 Content button">
+                <span>Experience</span>
+              </span>
+              <span class="trasave-text68 Content button">Wallet</span>
+              <div class="trasave-frame2">
+                <span class="trasave-text69 Content button">
+                  <span>Contact Us</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
